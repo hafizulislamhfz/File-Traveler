@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+body{
+
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover{
+
+    color: currentColor;
+}
+
+header{
+
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(42, 28, 164, 0.25);
+    border-bottom: 2px solid #274d8a;
+    display: flex;
+    align-items: center;
+}
+
+header .container-fluid{
+
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:992px){
+
+    header .container-fluid{
+        padding: 0 5%;
+    }
+}
+
+header .navb-logo img{
+
+    width: 140px;
+    height: 98px;
+    margin-top: -3px;
+}
+
+header .navb-items{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+}
+
+header .item{
+
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #102447;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #64d6f4;
+    border-top: 0px solid #64d6f4;
+    cursor: pointer;
+}
+
+header .item:hover{
+
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header .item-button a{
+
+    background-color: #1b2579;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all .5s ease;
+    margin-right: 5px;
+}
+
+header .item-button a:hover{
+
+    background-color: #274d8a;
+}
+
+header .mobile-toggler{
+
+    font-size: 30px;
+}
+
+/* modal */
+
+.modal-dialog{
+
+    margin: 0;
+    width: 430px;
+}
+
+/* @media(max-width: 450px){
+
+    .modal-dialog{
+        width: 82%;
+    }
+} */
+
+.modal-content{
+
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #102447;
+}
+
+.modal-header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-header img{
+
+    width: 140px;
+    height: 66px;
+    margin-top: 17.5px;
+}
+
+.modal-header .btn-close{
+
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i{
+
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body{
+
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #274d8a;
+    border-bottom: 1px solid #274d8a;
+}
+
+.modal-body .modal-line:hover{
+
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+.navb-button{
+
+    width: 100%;
+    height: 47px;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #274d8a;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+    margin-top: 5px;
+}
+
+.navb-button:hover{
+
+    background-color: #274d8a;
+    color: #fefefe;
+}
+
+.mobile-modal-footer{
+
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #274d8a;
+}
+
+.mobile-modal-footer i:hover{
+    color: #fefefe;
+}
+
+
+
+/* file-share css :start */
+.file-share{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-share .file {
+    height: 500px;
+    width: 400px;
+    margin: -50px 0px 0px 0px;
+    position: relative;
+}
+
+
+.file-share .file .box{
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 10px rgba(42, 28, 164, 0.25);
+    border-radius: 5px;
+    position: absolute;
+    border: 1px solid #274d8a;
+}
+
+.file-share .file .box .title{
+    display: inline-flex;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0px 0px 35px;
+    color: #274d8a;
+    text-shadow: 0px 5px 10px rgba(42, 28, 164, 0.25);
+}
+
+.file-share .file .box .title #addmore{
+    cursor: pointer;
+    font-size: 17px;
+    margin: 15px 0px 0px 210px;
+    color: #274d8a;
+    text-shadow: 0px 5px 10px rgba(42, 28, 164, 0.25);
+    display: none;
+}
+
+
+.file-share .file .send{
+    width: 400px;
+    height: 295px;
+}
+
+.file-share .file .send .send-icon{
+    height: 100px;
+    width: 100px;
+    color: #274d8a;
+    margin: 50px 0px 0px 150px;
+}
+
+.file-share .file .send .send-icon input{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-share .file .send .file-list-box{
+    position: relative;
+    height: 230px;
+    width: 400px;
+    display: none;
+}
+
+.file-share .file .send .file-list-box .file-list{
+    position: absolute;
+    background-color: #f3f4f9;
+    height: 165px;
+    width: 330px;
+    border-radius: 3px;
+    border: 1px solid #274d8a;
+    margin: 0px 0px 0px 35px;
+    overflow-y: hidden;
+}
+
+.file-share .file .send .file-list-box .file-list .file-info{
+    border-bottom: 1px solid #274d8a;
+    position: sticky;
+}
+
+.file-share .file .send .file-list-box .file-list .file-info p{
+    margin: 5px 0px 0px 5px;
+    color: #274d8a;
+    max-width: 305px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-share .file .send .file-list-box .file-list .file-info p a{
+    color: #a43c1c;
+}
+
+.file-share .file .send .file-list-box .file-list .file-info p a:hover{
+    color: red;
+}
+
+.file-share .file .send .file-list-box .file-list ul{
+    list-style-type: none;
+    margin: 5px 0px 0px 5px;
+    padding: 0;
+    overflow-y: auto;
+    max-height: calc(100% - 40px);
+}
+
+.file-share .file .send .file-list-box .file-list ul li{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 2px 0px;
+    overflow: hidden;
+}
+
+.file-share .file .send .file-list-box .file-list ul li .file-name{
+    flex-grow: 1;
+    white-space: nowrap;
+    height: 22px;
+}
+
+.file-share .file .send .file-list-box .file-list ul li .file-name span{
+    display: inline-block;
+    width: 285px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.file-share .file .send .file-list-box .file-list ul li .file-name span i{
+    color: #a43c1c;
+    margin-left: 5px;
+}
+
+.file-share .file .send .file-list-box .file-list ul li .file-name span i:hover{
+    color: red;
+}
+
+.file-share .file .send .file-list-box .file-list .receive-key{
+    margin: 20px 0px 0px 22px;
+    display: none;
+}
+
+.file-share .file .send .file-list-box .file-list .receive-key span{
+    color: #1b2579;
+    position: relative;
+    cursor: pointer;
+    font-size: 55px;
+    letter-spacing: 20px;
+    font-weight: 600;
+}
+
+.file-share .file .send .file-list-box .file-list .receive-key span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.file-share .file .send .file-list-box .file-list .receive-key span:hover::before {
+    opacity: 1;
+}
+
+.file-share .file .send .file-list-box .send-button button{
+    position: absolute;
+    background-color: #1b2579;
+    color: #fff;
+    height: 40px;
+    width: 330px;
+    border-radius: 3px;
+    margin: 175px 0px 0px 35px;
+    box-shadow: 0px 5px 10px rgba(42, 28, 164, 0.25);
+}
+
+.file-share .file .send .file-list-box .send-button button:hover{
+    background-color: #274d8a;
+}
+
+.file-share .file .send .file-list-box .send-button #sending-button-icon{
+    display: none;
+}
+
+
+.file-share .file .receive{
+    width: 400px;
+    height: 240px;
+    margin : 310px 0px 0px 0px;
+}
+
+
+.file-share .file .receive .input-group{
+    height: 50px;
+    width: 330px;
+    margin: 50px 0px 0px 35px;
+    border: 2px solid #274d8a;
+    box-shadow: 0px 5px 10px rgba(42, 28, 164, 0.25);
+    border-radius: 5px;
+}
+
+.file-share .file .receive .input-group .form-control{
+    color: #1b2579;
+    font-size: 22px;
+}
+
+.file-share .file .receive .input-group .form-control::placeholder{
+    color: #1b2579;
+    font-size: 17px;
+}
+
+.file-share .file .receive .input-group .form-control:focus{
+    box-shadow: none;
+}
+
+.file-share .file .receive .input-group button{
+    background-color: #1b2579;
+    color: #fff;
+}
+
+.file-share .file .receive .input-group button:hover{
+    background-color: #274d8a;
+    color: #fff;
+}
+
+.file-share .file .receive .input-group button:focus{
+    box-shadow: none;
+}
+
+.file-share .file .receive .input-group button svg{
+    height: 30px;
+    width: 40px;
+}
+
+.file-share .file .receive .input-group button i{
+    height: 0px;
+    width: 40px;
+    display: none;
+}
+
+
+/* footer section start */
+.footer{
+    height: 50px;
+    width: 100%;
+    color: #274d8a;
+    background-color: #fff;
+    border-top: 2px solid #274d8a;
+    box-shadow: 0px -5px 10px rgba(42, 28, 164, 0.25);
+    text-align:center;
+}
+
+.footer footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer footer .dev-info{
+    text-align: left;
+    flex: 1;
+    margin-left : 5rem;
+}
+
+.footer footer span a{
+    text-decoration: underline;
+}
+
+.footer footer .total-share{
+    margin-right: 5rem;
+    flex: 1;
+    text-align: right;
+    font-weight: 500;
+}
+
+
+
+
+
+/* make it responsive */
+/* // Extra extra small devices (portrait phones) */
+@media (min-width: 310px) and (max-width: 350.98px) {
+    header {
+        height: 70px;
+    }
+
+    header .navb-logo img {
+        width: 110px;
+        height: 60px;
+    }
+
+    header .mobile-toggler {
+        margin-right: 5px;
+        font-size: 25px;
+    }
+
+    .modal-dialog{
+        width: 82%;
+    }
+
+    .file-share .file {
+        margin: 5px 0px 0px 13px;
+    }
+
+    .file-share .file .send {
+        width: 300px;
+    }
+
+    .file-share .file .box .title {
+        font-size: 25px;
+        margin: 15px 0px 0px 15px;
+    }
+
+    .file-share .file .send .send-icon {
+        margin: 50px 0px 0px 105px;
+    }
+
+    .file-share .file .box .title #addmore {
+        margin: 8px 0px 0px 165px;
+    }
+
+    .file-share .file .send .file-list-box .file-list {
+        width: 271px;
+        margin: 0px 0px 0px 13px;
+    }
+
+    .file-share .file .send .file-list-box {
+        height: 100%;
+        width: 100%;
+    }
+
+    .file-share .file .send .file-list-box .file-list .file-info p {
+        max-width: 255px;
+    }
+
+    .file-share .file .send .file-list-box .send-button button {
+        width: 271px;
+        margin: 180px 0px 0px 13px;
+    }
+
+    .file-share .file .send .file-list-box .file-list .receive-key span {
+        font-size: 43px;
+    }
+
+    .file-share .file .send .file-list-box .file-list ul li .file-name span {
+        width: 235px;
+    }
+
+    .file-share .file .send .file-list-box .file-list .receive-key {
+        margin: 35px 0px 0px 10px;
+    }
+
+
+    .file-share .file .receive{
+        width: 300px;
+        height: 180px;
+    }
+
+    .footer footer {
+        display: block;
+        height: 60px;
+    }
+
+    .footer footer .dev-info {
+        display: block;
+        margin-left: 25px;
+    }
+
+    .footer footer .total-share {
+        margin-right: 5px;
+    }
+
+    .file-share .file .receive .input-group {
+        margin: 25px 0px 0px 13px;
+        width: 271px;
+    }
+}
+
+/* Extra small device */
+@media (min-width: 351px) and (max-width: 575.98px) {
+    header {
+        height: 70px;
+    }
+
+    header .navb-logo img {
+        width: 110px;
+        height: 60px;
+    }
+
+    header .mobile-toggler {
+        margin-right: 5px;
+        font-size: 25px;
+    }
+
+    .modal-dialog{
+        width: 82%;
+    }
+
+    .file-share .file {
+        margin: 5px 0px 0px 45px;
+    }
+
+    .file-share .file .send {
+        width: 300px;
+    }
+
+    .file-share .file .box .title {
+        font-size: 25px;
+        margin: 15px 0px 0px 15px;
+    }
+
+    .file-share .file .send .send-icon {
+        margin: 50px 0px 0px 105px;
+    }
+
+    .file-share .file .box .title #addmore {
+        margin: 8px 0px 0px 165px;
+    }
+
+    .file-share .file .send .file-list-box .file-list {
+        width: 271px;
+        margin: 0px 0px 0px 13px;
+    }
+
+    .file-share .file .send .file-list-box {
+        height: 100%;
+        width: 100%;
+    }
+
+    .file-share .file .send .file-list-box .file-list .file-info p {
+        max-width: 255px;
+    }
+
+    .file-share .file .send .file-list-box .send-button button {
+        width: 271px;
+        margin: 180px 0px 0px 13px;
+    }
+
+    .file-share .file .send .file-list-box .file-list .receive-key span {
+        font-size: 43px;
+    }
+
+    .file-share .file .send .file-list-box .file-list ul li .file-name span {
+        width: 235px;
+    }
+
+    .file-share .file .send .file-list-box .file-list .receive-key {
+        margin: 35px 0px 0px 10px;
+    }
+
+
+    .file-share .file .receive{
+        width: 300px;
+        height: 180px;
+    }
+
+    .footer footer {
+        display: block;
+        height: 60px;
+    }
+
+    .footer footer .dev-info {
+        display: block;
+        margin-left: 45px;
+    }
+
+    .footer footer .total-share {
+        margin-right: 5px;
+    }
+
+    .file-share .file .receive .input-group {
+        margin: 25px 0px 0px 13px;
+        width: 271px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .file-share .file {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .file-share .file .receive{
+        height: 180px;
+    }
+
+    .file-share .file .receive .input-group {
+        margin: 25px 0px 0px 35px;
+    }
+
+    .file-share .file .send .file-list-box .file-list .file-info p {
+        max-width: 315px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header .item-button a{
+        display: none;
+    }
+
+    .file-share .file {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .file-share .file .receive{
+        height: 180px;
+    }
+
+    .file-share .file .receive .input-group {
+        margin: 25px 0px 0px 35px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .file-share .file {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .file-share .file .send {
+        height: 295px;
+    }
+
+    .file-share .file .receive{
+        height: 180px;
+    }
+
+    .file-share .file .receive .input-group {
+        margin: 20px 0px 0px 35px;
+    }
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .file-share .file {
+        margin: 5px 0px 0px 0px;
+    }
+
+    .file-share .file .receive{
+        height: 185px;
+    }
+
+    .file-share .file .receive .input-group {
+        margin: 25px 0px 0px 35px;
+    }
+}
