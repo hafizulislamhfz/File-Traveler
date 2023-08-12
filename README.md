@@ -27,10 +27,11 @@ This is an instant File Sharing Laravel Application.This is a powerful and secur
 - **Composer:** A PHP dependency manager used to handle packages and libraries.
 - **Git & GitHub:** Version control and development platform for code management.
 
+## 🖼️ Previews
+
+https://github.com/hafizulislamhfz/File-Traveler/assets/98444239/91684f5a-330d-4c64-88f0-f6c52b1b18e5
+
 ## 📞 Contact
 
 For inquiries and assistance, feel free to reach out to me at [LinkedIn](https://www.linkedin.com/in/hafizulislamhfz/).
 
-## 🖼️ Previews
-
-https://github.com/hafizulislamhfz/File-Traveler/assets/98444239/91684f5a-330d-4c64-88f0-f6c52b1b18e5
